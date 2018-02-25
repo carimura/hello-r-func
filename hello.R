@@ -1,15 +1,14 @@
-# My first program in R Programming
-myString <- "Hello World!"
-
 # Print Hello World.
-print(paste("String 1: ", myString, sep=" "))
+msg <- "Hello world!"
+print(msg)
 
-# Add two numbers.
-print(23.9 + 11.6 + 123.12)
+# Add numbers.
+i <- 23.9 + 11.6 + 123.12
+print(i)
 
-# Print Stdin
+# Print STDIN
+result <- ""
 input<-file('stdin', 'r')
 row <- readLines(input, n=1)
-result <- ""
 result <- paste(result, row, sep=" ")
 print(paste("STDIN: ", result, sep=" "))
